@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.19.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Add training</title>
+</head>
+<body class="w-screen h-screen flex flex-col items-center">
+  <header class="forem_header w-full p-2 m-2 navbar bg-cyan-100">
+    <h1 class="text-3xl navbar-start">Forem</h1>
+    <nav class="header_nav navbar-end">
+      <ul class="menu menu-horizontal">
+        <li>
+          <a href="#" class="forem__header_profile forem__header_admin btn btn-primary btn-outline m-2 rounded">Admin</a>
+          <ul class="menu bg-base-100 rounded-box p-2 m-0 shadow-md">
+            <li><a href="#" class="hover-bordered">Ajouter formation</a></li>
+            <li><a href="inscription.html" class="hover-bordered">Inscrire stagaire</a></li>
+          </ul>
+        </li>
+        <li><a href="connexion.html" class="nav_deconnect btn btn-primary btn-outline m-2 rounded">Log out</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="w-full m-4">
+    <form action="" class="add_training w-fit m-2 p-2 flex flex-wrap form-control ">
+      <h2 class="text-xl">Ajouter une formation</h2>
+      <label for="" class="m-2 label flex flex-col-reverse items-start">
+        <input type="text" class="add_training__name input input-bordered input-primary mt-2">
+        Libellé de la formation
+      </label>
+      <label for="" class="m-2 label flex flex-col-reverse items-start">
+        <input type="date" class="add_training__date input input-bordered input-primary mt-2">
+        Date de début de la formation
+      </label>
+      <label for="trainingCenter" class="m-2 label flex flex-col-reverse items-start">Centre</label>
+      <select name="trainingCenter" class="add_training__center m-2 select select-primary">
+        <option value="1">Cepegra</option>
+        <option value="2">Technobel</option>
+      </select>
+      <label for="trainingInstructor" class="m-2 label flex flex-col-reverse items-start">Formateur</label>
+      <select name="trainingInstructor" class="add_training__instructor m-2 select select-primary">
+        <option value="1">Pierre Charlier</option>
+        <option value="2">Olivier Beléry</option>
+      </select>
+      <button class="add_training__btn btn btn-primary btn-outline w-fit mt-6 mx-2">Ajouter formation</button>
+    </form>
+  </main>
+  <footer class="forem_footer w-full p-2 mt-4 text-center bg-cyan-100">LCO&copy; - 2022</footer>
+  
+</body>
+</html>

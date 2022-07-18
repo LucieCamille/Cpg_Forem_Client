@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.19.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Inscription d'un stagiaire</title>
+</head>
+<body class="w-screen h-screen flex flex-col items-center">
+  <header class="forem_header w-full p-2 m-2 navbar bg-cyan-100">
+    <h1 class="text-3xl navbar-start">Forem</h1>
+    <nav class="header_nav navbar-end">
+      <ul class="menu menu-horizontal">
+        <li>
+          <a href="#" class="forem__header_profile forem__header_admin btn btn-primary btn-outline m-2 rounded">Admin</a>
+          <ul class="menu bg-base-100 rounded-box p-2 m-0 shadow-md">
+            <li><a href="addTraining.html" class="hover-bordered">Ajouter formation</a></li>
+            <li><a href="#" class="hover-bordered">Inscrire stagaire</a></li>
+          </ul>
+        </li>
+        <li><a href="connexion.html" class="nav_deconnect btn btn-primary btn-outline m-2 rounded">Log out</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="inscription w-full m-4">
+    <form action="" class="inscription__form w-fit m-2 p-2 flex flex-col flex-wrap form-control ">
+      <h2 class="text-xl">Inscrire un stagiaire à une formation</h2>
+      <label for="trainingName" class="inscription__training_label m-2 label flex flex-col-reverse items-start">Centre</label>
+      <select name="trainingName" class="inscription__training_select m-2 select select-primary">
+        <option value="1" class="inscription__training_option">Web front 11</option>
+        <option value="2" class="inscription__training_option">Infographie 2</option>
+      </select>
+      <label for="tsearch" class="m-2 label flex flex-col-reverse items-start">
+        <input type="search" name="tsearch" class="inscription__trainee_search input input-bordered input-primary mt-2">
+        Chercher un stagiaire
+      </label>
+    </form>
+    <section class="inscription__list m-2 p-2">
+      <h2 class="inscription__list_title text-xl">Liste des stagiaires déjà inscrits à cette formation</h2>
+      <ul class="inscription__list_container list-decimal ml-8">
+        <li class="inscription__list_item">Lucie Offergeld</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="forem_footer w-full p-2 mt-4 text-center bg-cyan-100">LCO&copy; - 2022</footer>
+  
+</body>
+</html>

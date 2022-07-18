@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.19.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Evaluation</title>
+</head>
+<body class="w-full flex flex-col items-center">
+  <header class="forem_header w-full p-2 m-2 navbar bg-cyan-100">
+    <h1 class="text-3xl navbar-start">Forem</h1>
+    <nav class="header_nav navbar-end">
+      <ul class="menu menu-horizontal">
+        <li><a href="#" class="forem__header_profile forem__header_trainee btn btn-primary btn-outline m-2 rounded">Stagiaire</a></li>
+        <li><a href="connexion.html" class="nav_deconnect btn btn-primary btn-outline m-2 rounded">Log out</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="w-full m-2 p-2">
+    <h2 class="text-2xl p-4">Welcome!</h2>
+    <form action="" class="trainig_selection w-fit p-2 grid gap-4 form-control">
+      <label for="" class="training_selection__label label">Choisis ta formation</label>
+      <select name="trainingOption" class="training_selection__select select select-primary">
+        <option value="1" class="training_selection__option">Web fron 11</option>
+        <option value="2" class="training_selection__option">Infographie 2</option>
+      </select>
+    </form>
+    <!-- <section class="profile">
+      <section class="training_infos">
+        <p class="training_infos__start_date"></p>
+        <p class="training_infos__eval_date"></p>
+      </section>
+      <section class="profile_infos grid gap-2">
+        <p>Prénom</p>
+        <p>Lucie</p>
+        <p>Nom</p>
+        <p>Offergeld</p>
+      </section>
+    </section> -->
+    <form action="" class="evaluation w-fit p-2 grid gap-4 form-control">
+      <h2 class="text-xl">Evaluation</h2>
+      <fieldset class="evaluation__Q1 p-2 m-1 border-b-2 grid">
+        <div class="evaluation__Q1_header">
+          <h3 class="evaluation__Q1_title">Theme</h3>
+          <p><span class="evaluation__Q1_subtitle">J'analyse les problèmes pour y trouver des solutions.</span> Capacité de réfléchir et de faire montre de logique et de jugement face à des décisions, d'évaluer des problèmes ou des situations en faisant les recherches nécessaires et en analysant les différentes composantes
+          </p>
+        </div>
+        <label for="" class="m-2 flex items-center">
+          <input type="radio" class="evaluation__Q1A1 p-2 radio radio-primary">
+          Je me fie à mon instinct et je commence à travailler sans réflexion
+        </label>
+        <label for="" class="m-2 flex items-center">
+          <input type="radio" class="evaluation__Q1A2 p-2 radio radio-primary">
+          Je consulte le web à la recherche d'une solution toute faite. Je fais appel à quelqu'un pour m'aider
+        </label>
+        <label for="" class="m-2 flex items-center">
+          <input type="radio" class="evaluation__Q1A3 p-2 radio radio-primary">
+          Je décompose un problème en sous-éléments en utilisant un schéma. Je consulte différentes ressources & documentations pour parvenir à une solution.
+        </label>
+        <label for="" class="m-2 flex items-center">
+          <input type="radio" class="evaluation__Q1A4 p-2 radio radio-primary">
+          J'anticipe les évolutions futures et organise les problèmes. J'évalue de manière réaliste mes limites et le temps nécessaire.
+        </label>
+      </fieldset>
+      <fieldset class="evaluation__Q2 p-2 m-1 border-b-2 grid">
+        <div class="evaluation__Q2_header">
+          <h3 class="evaluation__Q2_title">Theme</h3>
+          <p><span class="evaluation__Q2_subtitle">Je suis curieux intellectuellement pour ce qui touche à mon métier</span> Capacité d'ouvrir son champ de connaissance, d'avoir l'esprit ouvert, d'acquérir continuellement de nouvelles connaissances et d'apprendre de ses expériences antérieures
+          </p>
+        </div>
+        <label for="" class="m-2 flex items-center">
+          <input type="radio" class="evaluation__Q2A1 radio radio-primary">
+          J'évite d'utiliser des choses inconnues et je reste sur mes acquis.
+        </label>
+        <label for="" class="m-2 flex items-center">
+          <input type="radio" class="evaluation__Q2A2 radio radio-primary">
+          Je découvre des nouveautés lorsqu'elles se présentent à moi. Je pose des questions à mes pairs en fonction des besoins.
+        </label>
+        <label for="" class="m-2 flex items-center">
+          <input type="radio" class="evaluation__Q2A3 radio radio-primary">
+          Je me tiens au courant des dernières nouveautés dans mon domaine. Je fais preuve de sens critique, j'établis des liens.
+        </label>
+        <label for="" class="m-2 flex items-center">
+          <input type="radio" class="evaluation__Q2A4 radio radio-primary">
+          Je fais des recherches et me lance des défis en dehors de mon temps de travail "officiel" (hackathons, challenges…)
+        </label>
+      </fieldset>
+      <button class="evaluation__submit btn btn-primary btn-outline w-fit">Soumettre l'évaluation</button>
+    </form>
+  </main>
+  <footer class="forem_footer w-full p-2 mt-4 text-center bg-cyan-100">LCO&copy; - 2022</footer>
+  
+</body>
+</html>
