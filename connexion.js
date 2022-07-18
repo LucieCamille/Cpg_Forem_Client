@@ -1,4 +1,4 @@
-const urlApi = 'http://localhost/forumApi/'
+const urlApi = 'http://localhost/Forem_Api/'
 const connectForm = document.querySelector('.connexion')
 const deconnectLink = document.querySelector('.nav_deconnect')
 
@@ -16,7 +16,7 @@ deconnectLink.addEventListener('click', (e) => {
 connectForm.addEventListener('submit', (e) => {
   e.preventDefault();
   let userIdent = {
-    login: connectForm.querySelector('.login').value,
+    email: connectForm.querySelector('.email').value,
     password: connectForm.querySelector('.password').value
   }
   //console.log(userIdent);
@@ -34,7 +34,7 @@ connectForm.addEventListener('submit', (e) => {
     console.log(response)
     if(response.code == 200) {
       localStorage.setItem('token', response.token);
-      localStorage.setItem('id_users', response.id_users);
+      //localStorage.setItem('id_users', response.id_users);
     }
   })
   .catch(error => console.error(error))

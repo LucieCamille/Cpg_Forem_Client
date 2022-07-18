@@ -28,6 +28,11 @@
   <main class="w-full m-4">
     <form action="" class="add_training w-fit m-2 p-2 flex flex-wrap form-control ">
       <h2 class="text-xl">Ajouter une formation</h2>
+      <label for="job" class="m-2 label">Métiers</label>
+      <select name="trainingCenter" class="add_training__job m-2 select select-primary">
+        <option value="1" class="add_training__job_item">Web Front-end</option>
+        <option value="2">Webdesign Ux/Ui</option>
+      </select>
       <label for="" class="m-2 label flex flex-col-reverse items-start">
         <input type="text" class="add_training__name input input-bordered input-primary mt-2">
         Libellé de la formation
@@ -36,12 +41,12 @@
         <input type="date" class="add_training__date input input-bordered input-primary mt-2">
         Date de début de la formation
       </label>
-      <label for="trainingCenter" class="m-2 label flex flex-col-reverse items-start">Centre</label>
+      <label for="trainingCenter" class="m-2 label">Centre</label>
       <select name="trainingCenter" class="add_training__center m-2 select select-primary">
         <option value="1">Cepegra</option>
         <option value="2">Technobel</option>
       </select>
-      <label for="trainingInstructor" class="m-2 label flex flex-col-reverse items-start">Formateur</label>
+      <label for="trainingInstructor" class="m-2 label">Formateur</label>
       <select name="trainingInstructor" class="add_training__instructor m-2 select select-primary">
         <option value="1">Pierre Charlier</option>
         <option value="2">Olivier Beléry</option>
@@ -50,6 +55,6 @@
     </form>
   </main>
   <footer class="forem_footer w-full p-2 mt-4 text-center bg-cyan-100">LCO&copy; - 2022</footer>
-  
+  <script src="addTraining.js"></script>
 </body>
 </html>
