@@ -28,24 +28,27 @@
   <main class="inscription w-full m-4">
     <form action="" class="inscription__form w-fit m-2 p-2 flex flex-col flex-wrap form-control ">
       <h2 class="text-xl">Inscrire un stagiaire à une formation</h2>
-      <label for="trainingName" class="inscription__training_label m-2 label flex flex-col-reverse items-start">Centre</label>
-      <select name="trainingName" class="inscription__training_select m-2 select select-primary">
+      <label for="trainingName" class="inscription__training_label m-2 label">Centre</label>
+      <select name="trainingName" class="inscription__training_select mx-2 mt-0 select select-primary">
         <option value="1" class="inscription__training_option">Web front 11</option>
-        <option value="2" class="inscription__training_option">Infographie 2</option>
+        <option value="2" class="inscription__training_option">Blabla</option>
       </select>
       <label for="tsearch" class="m-2 label flex flex-col-reverse items-start">
-        <input type="search" name="tsearch" class="inscription__trainee_search input input-bordered input-primary mt-2">
+        <input type="search" list="trainees" name="tsearch" class="inscription__trainee_search input input-bordered input-primary mt-2" autocomplete="off">
         Chercher un stagiaire
       </label>
+      <datalist id="trainees" class="inscription__trainee_list">
+      </datalist>
+      <button class="inscription__form_btn btn btn-primary btn-outline w-fit mt-6 mx-2">Inscrire stagiaire</button>
     </form>
     <section class="inscription__list m-2 p-2">
       <h2 class="inscription__list_title text-xl">Liste des stagiaires déjà inscrits à cette formation</h2>
       <ul class="inscription__list_container list-decimal ml-8">
-        <li class="inscription__list_item">Lucie Offergeld</li>
+        <li value="1" class="inscription__list_item">Lucie Offergeld</li>
       </ul>
     </section>
   </main>
   <footer class="forem_footer w-full p-2 mt-4 text-center bg-cyan-100">LCO&copy; - 2022</footer>
-  
+  <script src="inscription.js"></script>
 </body>
 </html>
