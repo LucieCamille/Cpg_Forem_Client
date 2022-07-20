@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.19.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Stagiaire</title>
+</head>
+<body>
+  <header class="forem_header w-full p-2 m-2 navbar bg-cyan-100">
+    <h1 class="text-3xl navbar-start">Forem</h1>
+    <nav class="header_nav navbar-end">
+      <ul class="menu menu-horizontal">
+        <li><a href="#" class="forem__header_profile forem__header_trainee btn btn-primary btn-outline m-2 rounded">Stagiaire</a></li>
+        <li><a href="connexion.html" class="nav_deconnect btn btn-primary btn-outline m-2 rounded">Log out</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="w-full m-2 p-2">
+    <h2 class="text-2xl p-4">Welcome!</h2>
+    <form action="" class="trainig_selection w-fit p-2 grid gap-4 form-control">
+      <label for="" class="training_selection__label label">Choisis ta formation</label>
+      <select name="trainingOption" class="training_selection__select select select-primary">
+        <option value="1" class="training_selection__option">Web fron 11</option>
+        <option value="2" class="training_selection__option">Infographie 2</option>
+      </select>
+    </form>
+    <section class="profile m-2 w-3/5 flex justify-between">
+      <section class="training_infos m-1 p-1">
+        <h2 class="text-xl m-2">Informations de la formation</h2>
+        <table class="training_infos__table w-full table table-normal">
+          <tr>
+            <th>Date de début</th>
+            <th>Centre</th>
+            <th>Formateur</th>
+          </tr>
+          <tr class="training_infos__table_add">
+            <!-- <td>10-06-2022</td>
+            <td>Bla</td>
+            <td>Bla Blabla</td> -->
+          </tr>
+        </table>
+      </section>
+      <section class="profile_infos m-1 p-1">
+        <h2 class="text-xl m-2">Informations du stagiaire</h2>
+        <table class="profile_infos__table w-full table table-normal">
+          <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+          </tr>
+          <tr class="profile_infos__table_add">
+            <td>Lucie</td>
+            <td>Bla</td>
+          </tr>
+        </table>
+      </section>
+    </section>
+    <section class="my_evaluation m-2 w-3/5">
+      <h2 class="my_evaluation__title text-xl m-2">Évaluations</h2>
+      <table class="my_evaluation__list w-full table table-normal">
+        <thead>
+          <tr>
+            <th>Date évaluation</th>
+            <th>Analyse</th>
+            <th>Interest</th>
+            <th>Autonomy</th>
+            <th>Criticism</th>
+            <th>Organized</th>
+            <th>Motivation</th>
+          </tr>
+        </thead>
+        <tbody class="my_evaluation__list_add">
+          <tr>
+            <td>date</td>
+            <td>2</td>
+            <td>3</td>
+            <td>2</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="evaluation.html" class="my_evaluation__add btn btn-primary btn-outline m-2 rounded">Nouvelle évaluation</a>
+    </section>
+    </main>
+  <footer class="forem_footer w-full p-2 mt-4 text-center bg-cyan-100">LCO&copy; - 2022</footer>
+  <script src="stagiaire.js"></script>
+</body>
+</html>

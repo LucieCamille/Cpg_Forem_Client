@@ -64,6 +64,7 @@ const GetInstructor = async () => {
 }
 
 //----Fonction pour ajouter un training
+//---------------------------------------A retravailler car ne reprend pas les values des inputs!
 const AddTraining = async () => {
   try {
     let response = await fetch(urlApi + 'training', {
@@ -72,11 +73,11 @@ const AddTraining = async () => {
           'Content-Type':'application/json'
       },
       body: JSON.stringify({
-        id_job: jobList.querySelector('.add_training__job_item').value,
+        id_job: jobList.value,
         label: addTrainingForm.querySelector('.add_training__name').value,
         start_date: addTrainingForm.querySelector('.add_training__date').value,
-        id_center: centerList.querySelector('.add_training__center_item').value,
-        id_instructor: instructorList.querySelector('.add_training__instructor_item').value,
+        id_center: centerList.value,
+        id_instructor: instructorList.value,
         token: localStorage.token
       })
     })

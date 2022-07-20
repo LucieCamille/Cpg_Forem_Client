@@ -33,8 +33,8 @@ connectForm.addEventListener('submit', (e) => {
   .then(response => {
     console.log(response)
     if(response.code == 200) {
-      localStorage.setItem('token', response.token);
-      //localStorage.setItem('id_users', response.id_users);
+      localStorage.setItem('token', response.token)
+      localStorage.setItem('id_user', response.id_user)
     }
   })
   .catch(error => console.error(error))
