@@ -10,6 +10,8 @@
   <title>Inscription d'un stagiaire</title>
 </head>
 <body class="w-screen h-screen flex flex-col items-center">
+
+<!--Header avec "logo" et navigation-->
   <header class="forem_header w-full p-2 m-2 navbar bg-cyan-100">
     <h1 class="text-3xl navbar-start">Forem</h1>
     <nav class="header_nav navbar-end">
@@ -25,7 +27,10 @@
       </ul>
     </nav>
   </header>
+
+  <!--Inscrire un stagiaire à une formation-->
   <main class="inscription w-full m-4">
+    <!--Choix formation et choix du stagiaire-->
     <form action="" class="inscription__form w-fit m-2 p-2 flex flex-col flex-wrap form-control ">
       <h2 class="text-xl">Inscrire un stagiaire à une formation</h2>
       <label for="trainingName" class="inscription__training_label m-2 label">Centre</label>
@@ -41,6 +46,8 @@
       </datalist>
       <button class="inscription__form_btn btn btn-primary btn-outline w-fit mt-6 mx-2">Inscrire stagiaire</button>
     </form>
+
+    <!--Liste des stagiaires inscrit pour la formation sélectionnée-->
     <section class="inscription__list m-2 p-2">
       <h2 class="inscription__list_title text-xl">Liste des stagiaires déjà inscrits à cette formation</h2>
       <ul class="inscription__list_container list-decimal ml-8">
@@ -48,6 +55,8 @@
       </ul>
     </section>
   </main>
+
+  <!--Pied de page-->
   <footer class="forem_footer w-full p-2 mt-4 text-center bg-cyan-100">LCO&copy; - 2022</footer>
   <script src="inscription.js"></script>
 </body>

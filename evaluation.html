@@ -10,6 +10,8 @@
   <title>Evaluation</title>
 </head>
 <body class="w-full flex flex-col items-center">
+
+<!--Header avec "logo" et navigation-->
   <header class="forem_header w-full p-2 m-2 navbar bg-cyan-100">
     <h1 class="text-3xl navbar-start">Forem</h1>
     <nav class="header_nav navbar-end">
@@ -19,8 +21,12 @@
       </ul>
     </nav>
   </header>
+
+<!--Evaluation par le stagiaire pour la formation sélectionnée-->
   <main class="w-full m-2 p-2">
     <h2 class="text-2xl p-4">Welcome!</h2>
+
+    <!--Choix de la formation-->
     <form action="" class="trainig_selection w-fit p-2 grid gap-4 form-control">
       <label for="" class="training_selection__label label">Choisis ta formation</label>
       <select name="trainingOption" class="training_selection__select select select-primary">
@@ -28,18 +34,8 @@
         <option value="2" class="training_selection__option">Infographie 2</option>
       </select>
     </form>
-    <!-- <section class="profile">
-      <section class="training_infos">
-        <p class="training_infos__start_date"></p>
-        <p class="training_infos__eval_date"></p>
-      </section>
-      <section class="profile_infos grid gap-2">
-        <p>Prénom</p>
-        <p>Lucie</p>
-        <p>Nom</p>
-        <p>Offergeld</p>
-      </section>
-    </section> -->
+
+    <!--Formulaire pour soumettre les réponses de l'évaluation-->
     <form action="" class="evaluation w-fit p-2 grid gap-4 form-control">
       <!-- <h2 class="text-xl">Evaluation</h2>
       <fieldset class="evaluation__Q1 p-2 m-1 border-b-2 grid">
@@ -91,6 +87,8 @@
       <button class="evaluation__submit btn btn-primary btn-outline w-fit">Soumettre l'évaluation</button> -->
     </form>
   </main>
+
+  <!--Pied de page-->
   <footer class="forem_footer w-full p-2 mt-4 text-center bg-cyan-100">LCO&copy; - 2022</footer>
   <script src="evaluation.js"></script>
 </body>
